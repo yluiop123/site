@@ -1,7 +1,7 @@
 module.exports = {
   base:'/site/',
   themeConfig: {
-    //sidebar: 'auto',
+    // sidebar: 'auto',
     nav: [{
         text: '前端技术',
         ariaLabel: '前端技术',
@@ -28,7 +28,7 @@ module.exports = {
         text: '后端技术',
         items: [
           { text: '基础', items: [
-						{ text: 'JAVA', link: '/language/japanese/' },
+						{ text: 'JAVA', link: '/back/java/01.getting-started.md' },
 						{ text: 'Springboot', link: '/language/japanese/' },
 						{ text: 'Springcloud', link: '/language/japanese/' }
 					]},
@@ -79,38 +79,47 @@ module.exports = {
 				]
 			}
     ],
-		sidebar: {
-			'/front/base': [
-				{
-					title: 'HTML基础教程',
-					children: [
-						'/front/base/html/01.html-intro.md',
-						'/front/base/html/02.html-editors.md',
-						'/front/base/html/03.html-basic.md',
-						'/front/base/html/04.html-head.md',
-						'/front/base/html/05.html-tables.md',
-						'/front/base/html/06.html-lists.md',
-						'/front/base/html/07.html-layouts.md',
-						'/front/base/html/08.html-forms.md'
-					]
-				},
-				{
-					title: 'CSS基础教程',
-					children: [
-						'/front/base/css/01.css-intro.md',
-						'/front/base/css/02.css-id-class.md',
-						'/front/base/css/03.css-howto.md',
-						'/front/base/css/04.css-background.md',
-						'/front/base/css/05.css-text.md',
-					]
-				},
-				{
-					title: 'JAVCASCRIPT基础教程',
-					children: [
-						'/front/base/html/01.html-intro.md',
-					]
-				}
-			]
-		}
+	sidebar: {
+		'/front/base': [
+			{
+				title: 'HTML基础教程',
+				children: [
+					'/front/base/html/01.html-intro.md',
+					'/front/base/html/02.html-editors.md',
+					'/front/base/html/03.html-basic.md',
+					'/front/base/html/04.html-head.md',
+					'/front/base/html/05.html-tables.md',
+					'/front/base/html/06.html-lists.md',
+					'/front/base/html/07.html-layouts.md',
+					'/front/base/html/08.html-forms.md'
+				]
+			},
+			{
+				title: 'CSS基础教程',
+				children: [
+					'/front/base/css/01.css-intro.md',
+					'/front/base/css/02.css-id-class.md',
+					'/front/base/css/03.css-howto.md',
+					'/front/base/css/04.css-background.md',
+					'/front/base/css/05.css-text.md',
+				]
+			},
+			{
+				title: 'JAVCASCRIPT基础教程',
+				children: [
+					'/front/base/html/01.html-intro.md',
+				]
+			}
+		],
+		'/back/java': [
+			{
+				title: 'JAVA教程',
+				children: [
+					'/back/java/01.getting-started.md',
+					'/back/java/02.oop.md'
+				]
+			}
+		]
+	}
   }
 }
